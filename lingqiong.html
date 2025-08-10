@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="云裳面板积分价格表 - 包含用户中心积分、云裳面板套餐及操作权限价格信息">
+    <meta name="keywords" content="云裳面板,积分价格,用户中心积分,云裳面板套餐">
+    <title>云裳面板积分价格表</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+            background: linear-gradient(120deg, #3498db, #8e44ad);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #e1e5eb;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e1e5eb;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .note-section {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .note-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .note-content {
+            padding-left: 20px;
+        }
+        
+        .note-item {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .note-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 30px;
+            border-top: 1px solid #e1e5eb;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>云裳面板积分价格表</h1>
+        <div class="subtitle">最新积分价格与套餐信息</div>
+    </header>
+    
+    <div class="container">
+        <!-- 表格1：用户中心积分价格 -->
+        <div class="card">
+            <div class="card-header">用户中心积分价格</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>积分项名称</th>
+                        <th>积分值</th>
+                        <th>价格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>用户中心积分</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>用户中心积分</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>用户中心积分</td>
+                        <td>18</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>用户中心积分</td>
+                        <td>28</td>
+                        <td>28</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- 表格2：云裳面板 -->
+        <div class="card">
+            <div class="card-header">云裳面板套餐</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>云裳面板</th>
+                        <th>月付</th>
+                        <th>季付</th>
+                        <th>年付</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>云裳面板 - Omg</td>
+                        <td>8</td>
+                        <td>18</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>云裳面板 - Tool - NET</td>
+                        <td>-</td>
+                        <td>28</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>云裳面板 - Omg - NET</td>
+                        <td>-</td>
+                        <td>28</td>
+                        <td>88</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="note-section">
+                <div class="note-title">补充说明：</div>
+                <div class="note-content">
+                    <div class="note-item">服务定位：非盈利性质服务，价格仅覆盖基础计算资源，不含额外功能或扩展支持</div>
+                    <div class="note-item">实例绑定规则：单个实例仅关联单个租赁账户，激活时需设置唯一服务器号</div>
+                    <div class="note-item">网络访问限制：实例不支持外网接入，群组互通等功能暂无可用</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 操作权限价格 -->
+        <div class="card">
+            <div class="card-header">操作权限价格</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>激活导入权限</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>更换实例</td>
+                        <td>32</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 云裳面板积分价格表 | 最后更新: 2023年8月10日</p>
+        <p>本网站提供最新的积分价格信息，价格变动恕不另行通知</p>
+    </footer>
+</body>
+</html>
